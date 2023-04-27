@@ -6,8 +6,9 @@ const Layout = ({pageName, children}) => {
     <div>
       <Head>
         <title>{title}</title>
+        <link rel='shortcut icon' href='/qa-logo.png'/>
       </Head>
-      <main className="bg-[#BEBEBE] h-full min-h-screen flex justify-center">
+      <main className="h-full bg-slate-100 min-h-screen flex justify-center">
         <div className="bg-white w-[425px] flex flex-col min-h-screen h-full">
           {children}    
         </div>
