@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from "react";
 
+const downloadVCard = (vcardText) => {
+  const vcardBlob = new Blob([vcardText], { type: "text/vcard" });
+  const vcardURL = URL.createObjectURL(vcardBlob);
+  window.open(vcardURL, "_blank");
+};
+
+
 const Vcard = ({ vcardData }) => {
   console.log(vcardData.vcard);
   const { nombre, ocupacion, website, email, celular, apellido, telefono_casa, telefono_trabajo, email_trabajo } =
     vcardData.attributes.vcard;
-  console.log(nombre);
-
-  const downloadTxtFile = (vcfText) => {
-    const element = document.createElement("a");
-    const file = new Blob([vcfText], { type: "text/plain;charset=utf-8" });
-    element.href = URL.createObjectURL(file);
-    element.download = "myFile.vcf";
-    document.body.appendChild(element);
-    element.click();
-  };
 
   const CreateVCard = () => {
     var vCardsJS = require("vcards-js");
@@ -36,7 +33,7 @@ const Vcard = ({ vcardData }) => {
   };
 
   return (
-    <button className="rounded-md border bg-[#044e7d] text-white p-3 w-full" onClick={() => downloadTxtFile(CreateVCard())}>
+    <button className="rounded-md border bg-[#044e7d] text-white p-3 w-full" onClick={() => downloadVCard(CreateVCard())}>
       + Guardar contacto
     </button>
   );
