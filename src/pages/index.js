@@ -7,7 +7,7 @@ const Home = ({ data }) => {
   return (
     <Layout pageName="Home">
       <div className="flex items-center justify-center h-screen">
-        Porfavor entrar desde el link que se les proporciono
+        Porfavor entrar desde el link que se les proporciono 
       </div>
     </Layout>
   );
