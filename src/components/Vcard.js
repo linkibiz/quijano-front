@@ -8,7 +8,6 @@ const downloadVCard = (vcardText) => {
 
 
 const Vcard = ({ vcardData }) => {
-  console.log(vcardData.vcard);
   const { nombre, ocupacion, website, email, celular, apellido, telefono_casa, telefono_trabajo, email_trabajo } =
     vcardData.attributes.vcard;
 
@@ -33,7 +32,7 @@ const Vcard = ({ vcardData }) => {
   };
 
   return (
-    <button className="rounded-md border bg-[#044e7d] text-white p-3 w-full" onClick={() => downloadVCard(CreateVCard())}>
+    <button className="font-bold rounded-md border bg-[#044e7d] text-white p-3 w-full" onClick={() => downloadVCard(CreateVCard())}>
       + Guardar contacto
     </button>
   );

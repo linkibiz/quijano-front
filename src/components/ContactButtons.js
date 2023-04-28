@@ -35,7 +35,7 @@ const ContactButtons = ({ contactData }) => {
             <a target="_blank" className=" h-16 w-16 bg-[#044e7d] p-4 rounded-full" href={ref}>
               {icon}
             </a>
-            <p>{dataItem.titulo_de_boton}</p>
+            <p className="font-bold">{dataItem.titulo_de_boton}</p>
           </div>
         ) : null;
       })}
