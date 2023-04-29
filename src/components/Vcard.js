@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const downloadVCard = (vcardText) => {
   const vcardBlob = new Blob([vcardText], { type: "text/vcard" });
   const vcardURL = URL.createObjectURL(vcardBlob);
-  window.open(vcardURL);
+  window.location = vcardURL;
 };
 
 
