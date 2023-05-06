@@ -32,7 +32,7 @@ const ContactButtons = ({ contactData }) => {
         const ref = dataItem?.titulo_de_boton === "Correo" ? `mailto:${dataItem.url}` : dataItem?.titulo_de_boton === "Llamar" ? `tel:${dataItem.url}` : dataItem?.url
         return dataItem ? (
           <div className="flex flex-col items-center gap-2">
-            <a target="_blank" className=" h-16 w-16 bg-[#044e7d] p-4 rounded-full" href={ref}>
+            <a target="_blank" className=" h-16 w-16 bg-[#222222] p-4 rounded-full" href={ref}>
               {icon}
             </a>
             <p className="font-bold">{dataItem.titulo_de_boton}</p>
