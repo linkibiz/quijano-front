@@ -11,7 +11,7 @@ const contactIcons = [
     id: 1,
   },
   {
-    iconType: "Ubicacion",
+    iconType: "Ubicación",
     icon: <Location />,
     id: 2,
   },
