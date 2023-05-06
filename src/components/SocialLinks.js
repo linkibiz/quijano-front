@@ -32,7 +32,7 @@ const SocialLinks = ({ socialLinks }) => {
   ];
   return (
     <>
-      <h2 className="font-bold">Siguenos en nuestras redes</h2>
+      <h2 className="font-bold">Síguenos en nuestras redes</h2>
       <ul className="flex gap-5 flex-wrap">
         {socialMediaPlatforms.map(({ platform, url, icon }) =>
           url ? (
