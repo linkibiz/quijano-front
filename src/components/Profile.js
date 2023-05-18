@@ -27,7 +27,7 @@ const Profile = ({ profileData }) => {
             alt={`Foto de ${nombre_apellido}`}
           />
           <div className="text-black w-full px-4 flex flex-col gap-y-3.5">
-            <h1 className="font-bold text-4xl">{nombre_apellido}</h1>
+            <h1 className="font-bold text-3xl">{nombre_apellido}</h1>
             <p className="text-xs tracking-wider">{description}</p>
           </div>
         </div>
