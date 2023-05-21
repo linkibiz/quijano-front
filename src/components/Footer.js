@@ -5,9 +5,9 @@ const Footer = () => {
   return(
     <div className="flex justify-center items-center m-3">
       {/* <img src="/qa-abogados.png" className=" h-24"/> */}
-      <a href="#">
+      {/* <a href="#">
         Ver propiedades
-      </a>
+      </a> */}
     </div>
   )
 };

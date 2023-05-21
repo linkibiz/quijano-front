@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import BannerImage from "../../public/images/patron-negro.png";
+import BannerImage from "../../public/images/aaln-banner.png";
 import Logo from "../../public/images/linki-logo.png";
 
 const Banner = () => {

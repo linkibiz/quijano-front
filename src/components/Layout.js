@@ -6,10 +6,10 @@ const Layout = ({pageName, children}) => {
     <div>
       <Head>
         <title>{title}</title>
-        <link rel='shortcut icon' href='/grupo-residencial-fav-icon.png'/>
+        <link rel='shortcut icon' href='/aaln-favicon.png'/>
       </Head>
-      <main className="bg-[#BEBEBE] h-full min-h-screen flex justify-center">
-        <div className="bg-gradient-pattern w-[425px] flex flex-col min-h-screen h-full">
+      <main className="bg-white h-full min-h-screen flex justify-center">
+        <div className="w-[425px] flex flex-col min-h-screen h-full">
           { children }
         </div>
       </main>
