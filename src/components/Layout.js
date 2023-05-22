@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 const Layout = ({pageName, children}) => {
-  const title = `${pageName} - Grupo Residencial`
+  const title = `${pageName} - AALN`
   return (
     <div>
       <Head>
