@@ -8,7 +8,7 @@ const Layout = ({pageName, children}) => {
         <title>{title}</title>
         <link rel='shortcut icon' href='/aaln-favicon.png'/>
       </Head>
-      <main className="bg-white h-full min-h-screen flex justify-center">
+      <main className="bg-[#eceded] h-full min-h-screen flex justify-center">
         <div className="w-[425px] flex flex-col min-h-screen h-full">
           { children }
         </div>

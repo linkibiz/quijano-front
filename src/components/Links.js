@@ -6,7 +6,7 @@ const Links = ({ linksList }) => {
   return (
     <div className="flex flex-col gap-3 w-full items-center">
       {linksList.map((link) => (
-        <Link href={link.url} target={link.target} className="p-3 font-bold w-4/5 text-center bg-[#3F414B] rounded-3xl text-white" key={link.id}>
+        <Link href={link.url} target={link.target} className="p-3 font-bold w-4/5 text-center bg-[#FFF] rounded-3xl text-[#063B80] border border-[#063B80]" key={link.id}>
             {link.titulo}
         </Link>
       ))}

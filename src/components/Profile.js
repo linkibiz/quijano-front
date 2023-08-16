@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
-import Logo from '../../public/images/aaln-logo-1.png'
+import Logo from '../../public/images/bnp_logo.png'
 const Profile = ({ profileData }) => {
 
   const {
@@ -17,7 +17,7 @@ const Profile = ({ profileData }) => {
   return (
     <>
       <div className="-space-x-1 mt-[-45%] relative z-10 shadow-lg rounded-3xl">
-        <div className="flex items-center bg-[#E4E6E5] rounded-3xl">
+        <div className="flex items-center bg-[#FFF] rounded-3xl">
           <Image
             className="rounded-l-3xl inline-block object-cover h-52 w-52"
             loader={myLoader}
@@ -27,9 +27,9 @@ const Profile = ({ profileData }) => {
             alt={`Foto de ${nombre_apellido}`}
           />
           <div className="text-black w-full px-4 flex flex-col gap-y-3.5 items-center">
-            <Image src={Logo} height={100} width={100} />
-            <h1 className="text-[#3F414B] font-bold text-4xl text-center">{nombre_apellido}</h1>
-            <p className="text-[#3F414B] text-xs tracking-[3px] font-bold">{description}</p>
+            <Image src={Logo} height={100} width={200} />
+            <h1 className="text-[#063B80] font-bold text-4xl text-center">{nombre_apellido}</h1>
+            <p className="text-[#063B80] text-xs tracking-[3px] font-bold">{description}</p>
           </div>
         </div>
       </div>

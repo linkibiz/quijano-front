@@ -21,7 +21,7 @@ const Perfil = ({ data }) => {
       <Wrapper>
         <Profile profileData={data} />
         <Vcard vcardData={data} />
-        <ContactButtons contactData={data} />
+        <ContactButtons contactData={data.attributes.botones} />
         <Links linksList={data.attributes.links} />
         <SocialLinks socialLinks={data.attributes.redes_sociales} />
         <Footer/>
